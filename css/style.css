@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 1px solid red; }
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0; }
+  body li {
+    list-style: none; }
+
+.wrapper {
+  max-width: 2000px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 900px;
+  background: #2ecc71 url(../images/Background.png) 110% 30% no-repeat;
+  color: #fff;
+  padding: 0 19.5% 0px 18.5%; }
+  .header .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: space-between;
+    -ms-flex-align: space-between;
+    align-items: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 14px 0 44px; }
+    .header .header__container .header__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      .header .header__container .header__menu .menu__title {
+        font-family: "Segoe UI Black";
+        font-size: 39px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 24.12px;
+        letter-spacing: 0.72px; }
+      .header .header__container .header__menu .menu__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-width: 56.4%; }
+        .header .header__container .header__menu .menu__links .link {
+          color: #fefefe;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0.72px; }
+        .header .header__container .header__menu .menu__links .link__get-app {
+          -webkit-transition: .5s all;
+          -o-transition: .5s all;
+          transition: .5s all;
+          width: 140px;
+          padding: 13px 36px;
+          border-radius: 50px;
+          background: #fff;
+          color: #2ecc71;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0.72px; }
+          .header .header__container .header__menu .menu__links .link__get-app:hover {
+            background: none;
+            padding: 12px 35px;
+            border: 1px solid #fff;
+            color: #fff; }
+    .header .header__container .header__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+      align-items: space-between;
+      max-height: 80%; }
+      .header .header__container .header__content .content__img {
+        z-index: 1;
+        max-height: 720px; }
+      .header .header__container .header__content .content__about {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+        width: 55%;
+        padding: 120px 0 180px 0; }
+        .header .header__container .header__content .content__about .about__app-logo {
+          width: 13%; }
+        .header .header__container .header__content .content__about .about__text .text__title {
+          font-size: 3.1vw;
+          font-weight: normal;
+          line-height: 60px; }
+          .header .header__container .header__content .content__about .about__text .text__title .bold {
+            font-weight: 700;
+            letter-spacing: 2.56px; }
+        .header .header__container .header__content .content__about .about__text .text {
+          color: #f4f4f4;
+          letter-spacing: 0.72px;
+          font-size: 18px;
+          line-height: 32px; }
+        .header .header__container .header__content .content__about .about__download .about__app-store {
+          margin-left: 5%; }
+  .header .bg__stravbery {
+    width: 160px;
+    height: 180px;
+    background: url(../images/Stravbery.png);
+    position: relative;
+    left: 40%;
+    top: -130px; }
+
+.main .text__title {
+  color: #5a5a5a;
+  font-size: 2.4vw;
+  font-weight: normal;
+  line-height: 60px; }
+
+.main .green {
+  color: #2ecc71; }
+
+.main .text {
+  color: #5a5a5a;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.54px; }
+
+.main .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 900px; }
+  .main .features .features__text {
+    width: 27.4%;
+    margin-left: 3.5%; }
+    .main .features .features__text .green {
+      color: #2ecc71; }
+
+.main .simple {
+  background: #F9F9F9 url(../images/Simple_background.png) 48% 90% no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 900px; }
+  .main .simple .simple__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 3%; }
+    .main .simple .simple__text .text__title, .main .simple .simple__text .text {
+      margin: 0 0 2% 0;
+      text-align: center;
+      max-width: 50.4%; }
+
+.main .manage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 700px; }
+  .main .manage .manage__text {
+    width: 26.05%;
+    margin-right: 6.95%; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 450px;
+  background: #2ecc71 url(../images/Footer_background.png) 40% -20% no-repeat; }
+  .footer .container {
+    max-width: 42.5%;
+    text-align: center; }
+    .footer .container .download__title {
+      color: #fff;
+      font-size: 2.4vw;
+      font-weight: normal;
+      line-height: 60px; }
+    .footer .container .bold {
+      font-weight: bold; }
+    .footer .container .download__text {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 0.24px;
+      margin-bottom: 60px; }
+    .footer .container .download__link {
+      color: #2ecc71;
+      background: #fff;
+      padding: 13px 85px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.72px; }

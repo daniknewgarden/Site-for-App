@@ -1,0 +1,23 @@
+@media screen and (max-width: 1750px) {
+  .wrapper {
+    max-width: 1750px; }
+  .header {
+    padding: 0 7%;
+    height: 750px; }
+    .header .header__container .header__menu .menu__links {
+      min-width: 70%; }
+    .header .header__container .header__content .content__img {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      max-height: 550px; }
+  .main .features .features__screenshot {
+    width: 35%; }
+  .main .features .features__text {
+    margin-left: 8%;
+    width: 40%; }
+  .main .simple .simple__screenshot {
+    width: 40%; }
+  .main .manage .manage__text {
+    width: 40%; }
+  .main .manage .manage__img {
+    width: 35%; } }

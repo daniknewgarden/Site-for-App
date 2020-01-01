@@ -1,0 +1,47 @@
+@import "mixin";
+@media screen and (max-width: 1750px){
+    .wrapper{
+        max-width: 1750px;
+    }
+    .header{
+        padding: 0 7%;
+        height: 750px;
+            .header__container{
+                .header__menu{
+                    .menu__links{
+                        min-width: 70%;
+                    }
+                }
+                .header__content{
+                    .content__img{
+                        align-self: flex-end;
+                        max-height: 550px;
+                    }
+                }
+            }
+    }
+    .main{
+        .features{
+            .features__screenshot{
+                width: 35%;
+            }
+            .features__text{
+                margin-left: 8%;
+                width: 40%;
+            }
+        }
+        .simple{
+            .simple__screenshot{
+                width: 40%;
+            }
+        }
+        .manage{
+            .manage__text{
+                width: 40%;
+            }
+            .manage__img{
+                width: 35%;
+            }
+        }
+    }
+}
