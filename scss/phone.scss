@@ -1,11 +1,13 @@
 @import "mixin";
 @import "variables";
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 510px){
     .wrapper{
         
     }
     .header{
+        height: 800px;
         padding: 0;
+        background-position: -850px 100px;
             .header__container{
                 padding: 0;
                 .header__menu{
@@ -37,18 +39,109 @@
                         }   
                 }
                 .header__content{
-                    display: block;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
                     padding: 0 20px;
-                    .content__about{
-                        width: 90%;
-                        z-index: 4;
+                    height: 900px;
+                        .content__about{
+                            align-items: center;
+                            width: 95%;
+                            height: 300px;
+                            padding: 0;
+                            z-index: 4;
+                                .about__app-logo{
+                                    width: 25%;
+                                }
+                                .about__text{
+                                    text-align: center;
+                                    .text__title{
+                                        font-size: 8vw;
+                                    }
+                                    .text{
+                                        font-weight: bold;
+                                    }
+                                }
+                                .about__download{
+                                    text-align: center;
+                                    width: 100%;
+                                }
+                        }
+                        .content__img{
+                            width: 50%;
+                            z-index: 1;
+                            opacity: .85;
+                        }
+                }
+            }
+            .bg__stravbery {
+                width: 100px;
+                height: 100px;
+                top: -70px;
+                left: 25%;
+            }
+    }
+    .main{
+        .text__title{
+            text-align: center;
+            font-size: 7vw;
+        }
+        .text{
+            text-align: center;
+            padding: 0 5%;
+        }
+        .features{
+            height: 700px;
+            flex-direction: column;
+                .features__text{
+                    width: 90%;
+                    margin: 0;
+                }
+                .features__screenshot{
+                    width: 60%;
+                }
+        }
+        .simple{
+            height:600px;
+                .simple__text{
+                    margin: 15% 0;
+                    .text__title{
+                       font-size: 6vw;
                     }
-                    .content__img{
-                        position: relative;
-                        bottom: 70%;
-                        z-index: 1;
+                    .text__title,
+                    .text{
+                        max-width: 90%;
                     }
                 }
+                .simple__screenshot{
+                    width: 80%;
+                    order: -1;
+                }
+        }
+        .manage{
+            margin: 5% 0;
+            flex-direction: column;
+            background-position: 100px 100px;
+                .manage__text{
+                    width: 90%;
+                    margin: 10%;
+                }
+                .manage__img{
+                    width: 90%;
+                    order: -1;
+                }
+        }
+    }
+    .footer{
+        background-position: -170px 0;
+            .container{
+                max-width: 90%;
+                    .download__title{
+                        font-size: 6vw;
+                    }
+                    .download__link{
+                        padding: 10px 50px;
+                    }
             }
     }
 }

@@ -2,8 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-decoration: none;
-  border: 1px solid red; }
+  text-decoration: none; }
 
 body {
   font-family: 'Roboto';
@@ -134,12 +133,15 @@ body {
           letter-spacing: 0.72px;
           font-size: 18px;
           line-height: 32px; }
-        .header .header__container .header__content .content__about .about__download .about__app-store {
-          margin-left: 5%; }
+        .header .header__container .header__content .content__about .about__download {
+          width: 100%; }
+          .header .header__container .header__content .content__about .about__download .about__app-store {
+            margin-left: 1%; }
   .header .bg__stravbery {
     width: 160px;
     height: 180px;
-    background: url(../images/Stravbery.png);
+    background: url(../images/Stravbery.png) no-repeat;
+    background-size: contain;
     position: relative;
     left: 40%;
     top: -130px; }
@@ -208,7 +210,8 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 3%; }
-    .main .simple .simple__text .text__title, .main .simple .simple__text .text {
+    .main .simple .simple__text .text__title,
+    .main .simple .simple__text .text {
       margin: 0 0 2% 0;
       text-align: center;
       max-width: 50.4%; }

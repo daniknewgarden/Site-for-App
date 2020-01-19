@@ -1,9 +1,61 @@
-// @media screen and (max-width: 1320px){
-//     .wrapper{
-//         max-width: 1320px;
-//     }
-//     .header{
-//         padding: 0 5%;
-        
-//     }
-// }
+@import "mixin";
+@import "variables";
+
+@media screen and (max-width: 1030px) {
+    .header {
+        height: 800px;
+        padding: 0 4%;
+        background-position: -800px 100px;
+
+        .header__container {
+            padding: 0;
+
+            .header__menu {
+                .menu__links {
+                    min-width: 80%;
+                }
+            }
+
+            .header__content {
+                .content__about {
+                    width: 60%;
+
+                    .about__app-logo {
+                        width: 20%;
+                    }
+
+                    .about__text {
+                        .text__title {
+                            font-size: 5.8vw;
+                        }
+                    }
+                }
+
+                .content__img {
+                    width: 35%;
+                }
+            }
+        }
+
+        .bg__stravbery {
+            width: 120px;
+            height: 120px;
+            top: -10%;
+            left: 45%;
+        }
+    }
+
+    .main {
+        .features {
+            height: 500px;
+        }
+
+        .simple {
+            height: 500px;
+        }
+
+        .manage {
+            height: 500px;
+        }
+    }
+}

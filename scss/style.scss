@@ -1,132 +1,157 @@
 @import "mixin";
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     text-decoration: none;
-    border: 1px solid red;
 }
-body{
+
+body {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
-        li{
-            list-style: none;
-        }
+
+    li {
+        list-style: none;
+    }
 }
-.wrapper{
+
+.wrapper {
     max-width: 2000px;
     margin: 0 auto;
 }
-.header{
+
+.header {
     width: 100%;
     height: 900px;
     background: $background url(../images/Background.png) 110% 30% no-repeat;
     color: #fff;
     padding: 0 19.5% 0px 18.5%;
-        .header__container{
-            @include flex (column, space-between, space-between);
-            width: 100%;
-            height: 100%;
-            padding: 0 14px 0 44px;    
-                .header__menu{
-                    @include flex (null, space-between, flex-end);
-                        .menu__title{
-                            font-family: "Segoe UI Black";
-                            font-size: 39px;
-                            font-weight: 900;
-                            font-style: italic;
-                            line-height: 24.12px;
-                            letter-spacing: 0.72px; 
-                        }
-                        .menu__links {
-                            @include flex (null, space-between, center);
-                            min-width: 56.4%;
-                                .link{
-                                    color: #fefefe;
-                                    font-size: 18px;
-                                    font-weight: 400;
-                                    line-height: 30px;
-                                    letter-spacing: 0.72px;
-                                }
-                                .link__get-app{
-                                    transition: .5s all;
-                                    width: 140px;
-                                    padding: 13px 36px;
-                                    border-radius: 50px;
-                                    background: $white;
-                                    color: $background;
-                                    font-size: 16px;
-                                    font-weight: 700;
-                                    letter-spacing: 0.72px;
-                                        &:hover{
-                                            background: none;
-                                            padding: 12px 35px;
-                                            border: 1px solid $white;
-                                            color: $white;
-                                        }
-                                }
 
-                        }
+    .header__container {
+        @include flex (column, space-between, space-between);
+        width: 100%;
+        height: 100%;
+        padding: 0 14px 0 44px;
+
+        .header__menu {
+            @include flex (null, space-between, flex-end);
+
+            .menu__title {
+                font-family: "Segoe UI Black";
+                font-size: 39px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 24.12px;
+                letter-spacing: 0.72px;
+            }
+
+            .menu__links {
+                @include flex (null, space-between, center);
+                min-width: 56.4%;
+
+                .link {
+                    color: #fefefe;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0.72px;
                 }
-                .header__content{
-                    @include flex (null, space-between, space-between);
-                    max-height: 80%;
-                    .content__img{
-                        z-index: 1;
-                        max-height: 720px;
-                    }    
-                    .content__about{
-                            @include flex (column, space-between, left);
-                            width: 55%;
-                            padding: 120px 0 180px 0;
-                                .about__app-logo{
-                                    width: 13%;
-                                }
-                                .about__text{
-                                    .text__title{
-                                        font-size: 3.1vw;
-                                        font-weight: normal;
-                                        line-height: 60px;
-                                            .bold{
-                                                font-weight: 700;
-                                                letter-spacing: 2.56px;
-                                            }
-                                    }
-                                    .text{
-                                        color: #f4f4f4;
-                                        letter-spacing: 0.72px;
-                                        font-size: 18px;
-                                        line-height: 32px;
-                                    }
-                                }
-                                .about__download{
-                                    .about__app-store{
-                                        margin-left: 5%;
-                                    }
-                                }
-                        }
+
+                .link__get-app {
+                    transition: .5s all;
+                    width: 140px;
+                    padding: 13px 36px;
+                    border-radius: 50px;
+                    background: $white;
+                    color: $background;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 0.72px;
+
+                    &:hover {
+                        background: none;
+                        padding: 12px 35px;
+                        border: 1px solid $white;
+                        color: $white;
+                    }
                 }
+
+            }
         }
-        .bg__stravbery{
-            width: 160px;
-            height: 180px;
-            background: url(../images/Stravbery.png);
-            position: relative;
-            left: 40%;
-            top: -130px;
+
+        .header__content {
+            @include flex (null, space-between, space-between);
+            max-height: 80%;
+
+            .content__img {
+                z-index: 1;
+                max-height: 720px;
+            }
+
+            .content__about {
+                @include flex (column, space-between, left);
+                width: 55%;
+                padding: 120px 0 180px 0;
+
+                .about__app-logo {
+                    width: 13%;
+                }
+
+                .about__text {
+                    .text__title {
+                        font-size: 3.1vw;
+                        font-weight: normal;
+                        line-height: 60px;
+
+                        .bold {
+                            font-weight: 700;
+                            letter-spacing: 2.56px;
+                        }
+                    }
+
+                    .text {
+                        color: #f4f4f4;
+                        letter-spacing: 0.72px;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+
+                .about__download {
+                    width: 100%;
+                    .about__app-store {
+                        margin-left: 1%;
+                    }
+                }
+            }
         }
+    }
+
+    .bg__stravbery {
+        width: 160px;
+        height: 180px;
+        background: url(../images/Stravbery.png) no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 40%;
+        top: -130px;
+    }
 }
-.main{
-    .text__title{
+
+.main {
+    .text__title {
         color: $title;
         font-size: 2.4vw;
         font-weight: normal;
         line-height: 60px;
     }
-    .green{
+
+    .green {
         color: $background;
     }
+
     .text {
         color: $title;
         font-size: 20px;
@@ -134,74 +159,89 @@ body{
         line-height: 32px;
         letter-spacing: 0.54px;
     }
-    .features{
+
+    .features {
         @include flex (null, center, center);
         height: 900px;
-            .features__text{
-                width: 27.4%;
-                margin-left: 3.5%;
-                    .green{
-                        color: $background;
-                    }
 
+        .features__text {
+            width: 27.4%;
+            margin-left: 3.5%;
+
+            .green {
+                color: $background;
             }
+
+        }
     }
-    .simple{
+
+    .simple {
         background: #F9F9F9 url(../images/Simple_background.png) 48% 90% no-repeat;
         @include flex (column, flex-end, center);
         height: 900px;
-        .simple__text{
+
+        .simple__text {
             @include flex (column, center, center);
             margin-bottom: 3%;
-            .text__title, .text{
+
+            .text__title,
+            .text {
                 margin: 0 0 2% 0;
                 text-align: center;
                 max-width: 50.4%;
             }
         }
     }
-    .manage{
+
+    .manage {
         @include flex (null, center, center);
         height: 700px;
-            .manage__text{
-                width: 26.05%;
-                margin-right: 6.95%;
-            }
+
+        .manage__text {
+            width: 26.05%;
+            margin-right: 6.95%;
+        }
     }
 }
-.footer{
+
+.footer {
     @include flex (column, center, center);
     height: 450px;
-    background: $background url(../images/Footer_background.png) 40%  -20% no-repeat;
-    .container{
+    background: $background url(../images/Footer_background.png) 40% -20% no-repeat;
+
+    .container {
         max-width: 42.5%;
         text-align: center;
-            .download__title{
-                color: $white;
-                font-size: 2.4vw;
-                font-weight: normal;
-                line-height: 60px;
-            }
-            .bold{
-                font-weight: bold;
-            }
-            .download__text{
-                color: $white;
-                font-size: 18px;
-                font-weight: 300;
-                line-height: 32px;
-                letter-spacing: 0.24px;
-                margin-bottom: 60px;
-            }
-            .download__link{
-                color: $background;
-                background: $white;
-                padding: 13px 85px;
-                border-radius: 50px;
-                font-size: 18px;
-                font-weight: 700;
-                line-height: 30px;
-                letter-spacing: 0.72px;
-            }
-    }    
+
+        .download__title {
+            color: $white;
+            font-size: 2.4vw;
+            font-weight: normal;
+            line-height: 60px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .download__text {
+            color: $white;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0.24px;
+            margin-bottom: 60px;
+        }
+
+        .download__link {
+            color: $background;
+            background: $white;
+            padding: 13px 85px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.72px;
+        }
+    }
 }
